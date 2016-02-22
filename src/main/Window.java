@@ -12,7 +12,7 @@ public class Window
 {
 		public static void Window(String args[]) {
 			
-			new createWindow();
+			
 			
 		}
 }

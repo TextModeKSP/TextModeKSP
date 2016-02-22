@@ -4,12 +4,28 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class Main {
+public class Main extends Frame {
 	
 	static long memAvailableMiB = Runtime.getRuntime().totalMemory() / 1048576;
 	
+	public Main (String Title){
+		
+		super();
+		
+		this.setTitle(Title);
+		
+		this.setVisible(true);
+		
+		this.setSize(1024,768);
+		
+	}
+	
+	
+	
 	public static void main(String args[])
 	{
+		
+		Main window = new Main("Text Mode KSP");
 		
 		System.out.println("TextModeKSP - build 1");
 		System.out.println("System information:");
@@ -18,16 +34,7 @@ public class Main {
 		
 	}
 	
-	public newWindow extends Frame {
-		
-			setTitle("Text Mode KSP"); // Set the title
-		    setSize(400,400); // Set size to the frame
-		    setVisible(true); // Make the frame visible
-		    setBackground(Color.red); // Set the background
-		    setExtendedState(MAXIMIZED_BOTH); // Make the frame maximized
-		    setCursor(Cursor.HAND_CURSOR); // Deprecated
-		
-	}
+	
 	
 }
 
